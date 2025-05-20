@@ -1,0 +1,9 @@
+.main {
+    display: inline;
+}
+
+.counter {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
