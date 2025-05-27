@@ -71,3 +71,7 @@ body {
     font-family: "Space Mono", monospace;
     padding: 12px 24px;
 }
+
+button:hover {
+    background-color: lightgray;
+}
