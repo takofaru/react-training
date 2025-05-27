@@ -64,8 +64,10 @@ function HomePage() {
 
     return (
         <div>
-            <button onClick={() => setAnother(prev => !prev)}>Mode: {showAnother ? "Multiply/Divide" : "Add/Subract"}</button>
             <Counter modeCounter={showAnother} />
+            <div className="switch-container">
+                <button className="switch" onClick={() => setAnother(prev => !prev)}>Mode: {showAnother ? "Multiply/Divide" : "Add/Subract"}</button>
+            </div>
         </div>
     );
 }

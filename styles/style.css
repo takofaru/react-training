@@ -11,3 +11,12 @@
     align-items: center;
 }
 
+.switch-container {
+    width: 100%;
+}
+
+.switch {
+    display: flex;
+    align-items: center;
+}
+
