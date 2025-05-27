@@ -1,7 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    background-color: #00072D;
+    font-family: "Gloock", serif;
+}
+
 .main {
     display: flex;
-    gap: 10px;
+    gap: 64px;
     align-items: center;
+}
+
+.main p {
+    font-size: 120px;
+    font-weight: bold;
+    color: white;
 }
 
 .counter {
@@ -13,10 +26,48 @@
 
 .switch-container {
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .switch {
     display: flex;
     align-items: center;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 12px;
+    font-size: 24px;
+    font-family: "Space Mono", monospace;
+    padding: 12px 24px;
 }
 
+.page-center {
+    min-height: 100vh; /* full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical center */
+    align-items: center;     /* horizontal center */
+    gap: 20px;
+}
+
+.bttnF {
+    padding: 12px 24px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 12px;
+    font-size: 24px;
+    font-family: "Space Mono", monospace;
+    font-weight: 600;
+}
+
+.rst {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 12px;
+    font-size: 24px;
+    font-family: "Space Mono", monospace;
+    padding: 12px 24px;
+}

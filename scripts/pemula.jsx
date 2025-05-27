@@ -35,11 +35,11 @@ function Counter({modeCounter}) {
             <>
                 <div className="counter">
                     <div className="main">
-                        <button onClick={() => handleCount('divide')}>/10</button>
+                        <button className="bttnF" onClick={() => handleCount('divide')}>/10</button>
                         <p>{count}</p>
-                        <button onClick={() => handleCount('multiply')}>*10</button>
+                        <button className="bttnF" onClick={() => handleCount('multiply')}>*10</button>
                     </div>
-                    <button onClick={() => handleCount('reset')}>Reset</button>
+                    <button className="rst" onClick={() => handleCount('reset')}>Reset</button>
                 </div>
             </>
         )
@@ -48,11 +48,11 @@ function Counter({modeCounter}) {
             <>
                 <div className="counter">
                     <div className="main">
-                        <button onClick={() => handleCount('subtract')}>-1</button>
+                        <button className="bttnF" onClick={() => handleCount('subtract')}>-1</button>
                         <p>{count}</p>
-                        <button onClick={() => handleCount('add')}>+1</button>
+                        <button className="bttnF" onClick={() => handleCount('add')}>+1</button>
                     </div>
-                    <button onClick={() => handleCount('reset')}>Reset</button>
+                    <button className="rst" onClick={() => handleCount('reset')}>Reset</button>
                 </div>
             </>
         );
@@ -63,10 +63,12 @@ function HomePage() {
     const [showAnother, setAnother] = React.useState(false);
 
     return (
-        <div>
+        <div className="page-center">
             <Counter modeCounter={showAnother} />
             <div className="switch-container">
-                <button className="switch" onClick={() => setAnother(prev => !prev)}>Mode: {showAnother ? "Multiply/Divide" : "Add/Subract"}</button>
+                <button className="switch" onClick={() => setAnother(prev => !prev)}>
+                    Mode: {showAnother ? "Multiply/Divide" : "Add/Subract"}
+                </button>
             </div>
         </div>
     );
